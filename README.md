@@ -1,7 +1,7 @@
 # LibriTTS-P: A Corpus with Speaking Style and Speaker Identity Prompts for Text-to-Speech and Style Captioning
 We introduce LibriTTS-P, a new corpus based on LibriTTS-R that includes utterance-level descriptions (i.e., prompts) of speaking style and speaker-level prompts of speaker characteristics. We employ a hybrid approach to construct prompt annotations: (1) manual annotations that capture human perceptions of speaker characteristics and (2) synthetic annotations on speaking style. Compared to existing English prompt datasets, our corpus provides more diverse prompt annotations for all speakers of LibriTTS-R. Experimental results for prompt-based controllable TTS demonstrate that the TTS model trained with LibriTTS-P achieves higher naturalness than the model using the conventional dataset. Furthermore, the results for style captioning tasks show that the model utilizing LibriTTS-P generates 2.5 times more accurate words than the model using a conventional dataset.
 
-You can check the [paper]() and [demo page]().
+You can check the [paper](https://arxiv.org/abs/2406.07969) and [demo page](https://masayakawamura.github.io/libritts-p/).
 ## File Details
 There are files related to LibriTTS-P under the `data` directory.
 The details of each file are as follows:
@@ -47,16 +47,16 @@ The details of each file are as follows:
     | raw_loudness_mean  | Average loudness of the audio file calculated per frame, providing an average measure of the loudness over time. |
     | raw_loudness_scale | Standard deviation of the frame loudness values, indicating the variability of loudness across the audio frames. |
     | invalid            | Flag indicating whether the utterance has been marked as invalid due to missing F0, an invalid speaking rate (e.g., speaking_rate < 0), or other processing errors. `1` means invalid, and `0` means valid. |
-(For detailed calculation methods of each item, please refer to [LibriTTS-P paper]().)
+(For detailed calculation methods of each item, please refer to [LibriTTS-P paper](https://arxiv.org/abs/2406.07969).)
 
 You can use audio from [LibriTTS-R](https://www.openslr.org/141/).
 
 ## Citation
 ```
-@inproceedings{libritts-p,
-    authors={anonymous},
+@inproceedings{librittsp,
+    authors={Masaya Kawamura, Ryuichi Yamamoto, Yuma Shirahata, Takuya Hasumi, Kentaro Tachibana},
     title={LibriTTS-P: A Corpus with Speaking Style and Speaker Identity Prompts for Text-to-Speech and Style Captioning},
-    booktitle={Proc. Under Submission},
+    booktitle={Proc. Interspeech 2024},
     month=sep,
     year=2024
 }
